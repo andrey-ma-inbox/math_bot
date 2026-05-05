@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: math-bot
+    runtime: python
+    repo: https://github.com/ВАШ_АККАУНТ/math-bot
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
